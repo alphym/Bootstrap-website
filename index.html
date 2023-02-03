@@ -5,27 +5,54 @@
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/7bfe064e41.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         /* Remove the navbar's default margin-bottom and rounded borders */
+        body {
+            background: #E5E5E5;
+        }
         .navbar {
             margin-bottom: 0;
             border-radius: 0;
+            background: #ffffff;
         }
-
+        .container {
+            height: 496px;
+            width: 1156px;
+            border-radius: 24px;
+            padding: 15px;
+            background: #ffffff;
+            margin-top: 144px;
+            margin-bottom: 144px;
+            display: flex;
+            flex-direction: row;
+        }
+        .text_header {
+            margin-left: 150px;
+            margin-top: 200px;
+        }
+        ul {
+            margin-left: -45px;
+        }
+        ul li {
+            display: inline-block;
+        }
+        li a i  {
+            margin: 0 5px;
+            color: #505F79;
+            font-size: 20px;
+        }
         /* Add a gray background color and some padding to the footer */
-        footer {
-            background-color: #f2f2f2;
-            padding: 25px;
-        }
+      
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar bg-white">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -33,76 +60,124 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Portfolio</a>
+                <a class="navbar-brand font-weight-bold" href="#">Logo</a>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+            <div class="collapse navbar-collapse " id="myNavbar">
+                <ul class="nav navbar-nav pull-right deep-purple-text">
+                    <li><a href="#" >Portfolio</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Gallery</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
+            
             </div>
         </div>
+        <div class="bg-image bg-white" 
+     style="background-image: url('https://atril33.github.io/My_Portfolio_complete/Images/bigger_img.png');
+            background-color:white;
+            width:100%;
+            background-size: cover;
+            height:500px">
+            <div class="text_header">
+                <h1 style="font-weight: 700; font-size: 48px; color: #091E42;">I’m Alphy
+                    <br>
+                    Glad to see you!</h1>
+                    <p style="text-align: left; width: 800px; font-weight: 500; font-size: 20px; color: #344563;">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+                    <h3 style="color:#7F8CFF; width: 150px; height: 24px;">Let's Contact</h3>
+                    <ul>
+                        <li><a href="https://twitter.com/AtrilSyed"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/syed-atril-831696248/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-m"></i></a></li>
+                        <li><a href="https://github.com/Atril33"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://web.facebook.com/profile.php?id=100073724910623"><i class="fa-brands fa-facebook"></i></a></li>
+                     </ul>
+            </div>
+</div>
     </nav>
+     
+  
+   
 
-    <div class="jumbotron">
-        <div class="container text-center">
-            <h1>My Portfolio</h1>
-            <p>Some text that represents "Me"...</p>
+<div class="container">
+    <img src="https://atril33.github.io/My_Portfolio_complete/Images/Image_3.png" style="margin-right: 20px; width: 544px; height: 448px">
+    <div class="text">
+        <h1 style="font-weight:700">Tonic</h1>
+    <p style="font-size: 18px">A daily selection of privately
+        personalized reads; no accounts or sign-ups required.</p> 
+        <div class="skills" style="display: flex; flex-direction: row;">
+            <h1><span class="badge bg-secondary" style="padding: 8px; margin: 5px; color: #6070FF; background: #EBEBFF;">Css</span></h1> 
+            <h1><span class="badge bg-secondary" style="padding: 8px; margin: 5px; color: #6070FF; background: #EBEBFF;">Html</span></h1> 
+            <h1><span class="badge bg-secondary" style="padding: 8px; margin: 5px; color: #6070FF; background: #EBEBFF;">Javascript</span></h1> 
         </div>
+       
+
+        <br>
+       
+        <button type="button" class="btn btn-secondary" style="width: 124px; height: 48px; color: #396DF2; background: transparent; border: 1px solid #396DF2; padding: 8px 10px; border-radius: 8px;">Secondary</button>
+        
     </div>
+    
+  </div>
 
-    <div class="container-fluid bg-3 text-center">
-        <h3>Some of my Work</h3><br>
-        <div class="row">
-            <div class="col-sm-3">
-                <p>Some text..</p>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            </div>
-            <div class="col-sm-3">
-                <p>Some text..</p>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            </div>
-            <div class="col-sm-3">
-                <p>Some text..</p>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            </div>
-            <div class="col-sm-3">
-                <p>Some text..</p>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            </div>
+  <div class="container" style="flex-direction: row-reverse;">
+    <img src="https://atril33.github.io/My_Portfolio_complete/Images/Image_2.png" style="margin-right: 0px; width: 544px; height: 448px">
+    <div class="text">
+        <h1 style="font-weight:700">Tonic</h1>
+    <p style="font-size: 18px;">A daily selection of privately
+        personalized reads; no accounts or sign-ups required.</p> 
+        <div class="skills" style="display: flex; flex-direction: row;">
+            <h1><span class="badge bg-secondary" style="padding: 8px; margin: 5px; color: #6070FF; background: #EBEBFF;">Css</span></h1> 
+            <h1><span class="badge bg-secondary" style="padding: 8px; margin: 5px; color: #6070FF; background: #EBEBFF;">Html</span></h1> 
+            <h1><span class="badge bg-secondary" style="padding: 8px; margin: 5px; color: #6070FF; background: #EBEBFF;">Javascript</span></h1> 
         </div>
-    </div><br>
+       
 
-    <div class="container-fluid bg-3 text-center">
-        <div class="row">
-            <div class="col-sm-3">
-                <p>Some text..</p>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            </div>
-            <div class="col-sm-3">
-                <p>Some text..</p>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            </div>
-            <div class="col-sm-3">
-                <p>Some text..</p>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            </div>
-            <div class="col-sm-3">
-                <p>Some text..</p>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            </div>
+        <br>
+       
+        <button type="button" class="btn btn-secondary" style="width: 124px; height: 48px; color: #396DF2; background: transparent; border: 1px solid #396DF2; padding: 8px 10px; border-radius: 8px;">Secondary</button>
+        
+    </div>
+    
+  </div>
+  <div class="container">
+    <img src="https://atril33.github.io/My_Portfolio_complete/Images/Image_4.png" style="margin-right: 20px; width: 544px; height: 448px">
+    <div class="text">
+        <h1 style="font-weight:700">Tonic</h1>
+    <p style="font-size: 18px">A daily selection of privately
+        personalized reads; no accounts or sign-ups required.</p> 
+        <div class="skills" style="display: flex; flex-direction: row;">
+            <h1><span class="badge bg-secondary" style="padding: 8px; margin: 5px; color: #6070FF; background: #EBEBFF;">Css</span></h1> 
+            <h1><span class="badge bg-secondary" style="padding: 8px; margin: 5px; color: #6070FF; background: #EBEBFF;">Html</span></h1> 
+            <h1><span class="badge bg-secondary" style="padding: 8px; margin: 5px; color: #6070FF; background: #EBEBFF;">Javascript</span></h1> 
         </div>
-    </div><br><br>
+       
 
-    <footer class="container-fluid text-center">
-        <p>Footer Text</p>
-    </footer>
+        <br>
+       
+        <button type="button" class="btn btn-secondary" style="width: 124px; height: 48px; color: #396DF2; background: transparent; border: 1px solid #396DF2; padding: 8px 10px; border-radius: 8px;">Secondary</button>
+        
+    </div>
+    
+  </div>
 
+  <div class="container" style="flex-direction: row-reverse;">
+    <img src="https://atril33.github.io/My_Portfolio_complete/Images/Image_1.png" style="margin-right: 0px; width: 544px; height: 448px">
+    <div class="text">
+        <h1 style="font-weight:700">Tonic</h1>
+    <p style="font-size: 18px;">A daily selection of privately
+        personalized reads; no accounts or sign-ups required.</p> 
+        <div class="skills" style="display: flex; flex-direction: row;">
+            <h1><span class="badge bg-secondary" style="padding: 8px; margin: 5px; color: #6070FF; background: #EBEBFF;">Css</span></h1> 
+            <h1><span class="badge bg-secondary" style="padding: 8px; margin: 5px; color: #6070FF; background: #EBEBFF;">Html</span></h1> 
+            <h1><span class="badge bg-secondary" style="padding: 8px; margin: 5px; color: #6070FF; background: #EBEBFF;">Javascript</span></h1> 
+        </div>
+       
+
+        <br>
+       
+        <button type="button" class="btn btn-secondary" style="width: 124px; height: 48px; color: #396DF2; background: transparent; border: 1px solid #396DF2; padding: 8px 10px; border-radius: 8px;">Secondary</button>
+        
+    </div>
+    
+  </div>
 </body>
-
 </html>
